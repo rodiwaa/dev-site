@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Copilot Test</title>
+</head>
+<body>
+    <h1>Testing Chainlit Copilot</h1>
+    <p>The copilot button should appear in the bottom right corner.</p>
+    
+    <script src="http://localhost:8000/copilot/index.js"></script>
+    <script>
+        setTimeout(() => {
+            if (window.mountChainlitWidget) {
+                console.log("Chainlit widget available");
+                window.mountChainlitWidget({
+                    chainlitServer: "http://localhost:8000"
+                });
+            } else {
+                console.error("Chainlit widget not loaded");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

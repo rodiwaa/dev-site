@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rohit Diwakar - AI Agentic Developer with 15+ Years in Cloud Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HF3PNR13YZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HF3PNR13YZ');
+    </script>
+
+  <!-- n8n chat embed -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'http://localhost:5678/webhook/5f1f7650-9bcd-43e0-acbd-6ba044342a2e/chat',
+      allowFileUpload: true
+    });
+  </script> -->
+
+  <!-- chainlit interface - ava whatsapp -->
+	<!-- ... -->
+  <!-- <script src="http://localhost:8000/copilot/index.js"></script>
+  <script>
+    window.addEventListener("chainlit-call-fn", (e) => {
+      const { name, args, callback } = e.detail;
+      callback("You sent: " + args.msg);
+    });
+  </script>
+  <script>
+    window.mountChainlitWidget({
+      chainlitServer: "http://localhost:8000",
+    });
+  </script> -->
+
+  <!-- Chainlit Copilot Integration -->
+  <script src="http://localhost:8000/copilot/index.js"></script>
+    
+  <script>
+	  window.addEventListener("chainlit-call-fn", (e) => {
+		  const { name, args, callback } = e.detail;
+		  // Handle function calls from your Chainlit app
+		  callback("You sent: " + args.msg);
+	  });
+  </script>
+  
+  <script>
+	//   window.mountChainlitWidget({
+	// 	  chainlitServer: "http://localhost:8000",
+	// 	  theme: "light", // or "dark"
+	// 	  expanded: false, // Start collapsed
+	// 	  button: {
+	// 		  // Customize the chat button appearance
+	// 		  imageUrl: "your-custom-icon.png",
+	// 		  className: "custom-chat-button"
+	// 	  }
+	//   });
+
+	  setTimeout(() => {
+            if (window.mountChainlitWidget) {
+                console.log("Chainlit widget available");
+                window.mountChainlitWidget({
+                    chainlitServer: "http://localhost:8000"
+                });
+            } else {
+                console.error("Chainlit widget not loaded");
+            }
+        }, 1000);
+  </script>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<!-- <span class="icon solid major fa-cloud"></span> -->
+					<span class="icon solid major fa-comment"></span>
+					<h1>Heyllo, I'm <strong>Rohit!</strong><br /></h1>
+          <!-- <p>Software Engineer w 15 years of experience. I make AI solutions to automate workflows.</p> -->
+          <!-- <p class="icon solid major fa-wrench"></p> -->
+           <p>Agentic AI Developer Consultant | Cloud Architect | 15+ Years in Scalable Solutions</p>
+           <p>I’m passionate about building autonomous, intelligent systems that solve real-world problems. </p>
+           <p>Langchain, PydanticAI, LangGraph <br /> 
+            RAGs, CAGs w Evaluation (Ragas) <br />
+            Ollama, Hugging Face, Together AI, AWS Bedrock <br />
+            Stable Diffusion (ComfyUI, A1111) <br />
+            Multi Agent Orchestration Systems (Make, n8n, Relevance AI, CrewAI) <br />
+           </p>
+           <p>
+            <h1><a href="https://www.linkedin.com/in/rohitdiwakar/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a>
+              &nbsp;
+            <a href="https://www.instagram.com/_rodiwa/" target="_blank" class="icon brands alt fa-instagram"><span class="label"></span></a>
+            &nbsp;
+            <a href="https://blog.rohitdiwakar.com" target="_blank" class="icon brands alt fa-wordpress"><span class="label"></span></a>
+            
+          </h1>
+           
+           </p>
+
+           <ul class="actions special">
+						<li><a href="#one" class="button scrolly">Discover</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h3>Who Rohit? What Rohit? Why Rohit?</h3>
+							</header>
+              
+							<!-- <p>Rohit is a passionate software engineer who has worked on various technology stacks and various roles over span of 15 years. He is currently learning and creating projects on AI.</p> -->
+							<p>I've been a <b>Software Engineer</b> for over <b>15 years</b>. My latest role is of a <b>Technical Architect at a Global Financial Services Institution</b>. I started out with <b>Web Design</b>, quickly moved to <b>System Design and Cloud Migration and Solutioning</b>. I am currently automating workflows by building <b>Multi Agentic AI</b> systems.</p>
+              
+              <header class="major">
+								<h3>AI Tech Stack</h3>
+							</header>
+
+              <!-- <b>AI Tech Stack</b><hr /> -->
+              <p>Langchain, PydanticAI, LangGraph <br /> 
+                RAGs, CAGs w Evaluation (Ragas) <br />
+                Ollama, Hugging Face, Together AI, AWS Bedrock <br />
+                Stable Diffusion (ComfyUI, A1111) <br />
+                Multi Agent Orchestration Systems (Make, n8n, Relevance AI, CrewAI) <br />
+              </p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/me.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<ul class="major-icons">
+								<li><span class="icon solid style1 major fa-code"></span></li>
+								<li><span class="icon solid style2 major fa-bolt"></span></li>
+								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
+								<li><span class="icon solid style4 major fa-cog"></span></li>
+								<li><span class="icon solid style5 major fa-desktop"></span></li>
+								<li><span class="icon solid style6 major fa-calendar"></span></li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>(More) About Me</h2>
+							</header>
+							<p>I'm proud to belong to the LimeWire, Napster and Bonzi Buddy era of computing. I cannot do without tech. I've dismantled laptops and PCs for fun, or just to put thermal paste when it got too hot for gaming. I've overclocked CPUs and burnt cooling fans. I've reset BIOS passwords to get into password protected PCs. I've setup media file servers on raspberry pis. I've flashed custom ROMs to make old phones run faster. I've modded PC games because, why not?</p>
+							<p>I discover music and genres from Movies and TV Shows only. I detest today's music. I'm loyal to  Oasis, Fuel, Semisonic, Dishwalla. Dr Dog, Stephen Sanchez, Cigarettes After Sex are cool though. If it's new music, it has to be acoustic or lo-fi covers of good ol rock n roll noise (Tame Impala, Chezile, Torre Florim).</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Projects</h2>
+					</header>
+          <p>(I'm putting together <b>http://projects.rohitdiwakar.com</b> and <b>https://demos.rohitdiwakar.com</b> to show off my AI passion projects. Coming soon!)</p>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/blog.jpg" height="220" alt="" /></span>
+							<h3>Automated Blog Writer</h3>
+							<p>Write SEO optimised blogs on topics fed via Slack channels.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#one" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/linkedin.jpg" height="220" alt="" /></span>
+							<h3>Increase LinkedIn Engagement</h3>
+							<p>Better engagement on LI. Phase II - Sentiment analysis and reply to comments.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#two" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/stocks.jpg" height="220" alt="" /></span>
+							<h3>Algo Trading</h3>
+							<p>Testing strategies and indicators with LLMs. Creating Pine Scripts for automated trading.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#three" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/chatbot.jpg" height="220" alt="" /></span>
+							<h3>Conversational Chatbot</h3>
+							<p>Conversational Chatbot to answer queries from knowledge base.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#four" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/backend.jpg" height="220" alt="" /></span>
+							<h3>Headless CMS Site</h3>
+							<p>One CMS to rule them all.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#five" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/tv.jpg" height="220" alt="" /></span>
+							<h3>Media Server On Raspberry Pi</h3>
+							<p>To watch movies from any device on TV.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#six" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/spam.jpg" height="220" alt="" /></span>
+							<h3>Phone Call Assistant</h3>
+							<p>Android. Pick calls to determine if spam. Transcribe on screen.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#seven" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/chaos.jpg" height="220" alt="" /></span>
+							<h3>Framework for Automating Resiliency Experiments</h3>
+							<p>Automated chaos injection, monitoring, reporting.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#eight" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/blueprint.jpg" height="220" alt="" /></span>
+							<h3>Automated Infrstructure Management</h3>
+							<p>Infrastructure provisioning to onboard new clients for data analysis.</p>
+							<ul class="actions special">
+								<li><a href="./projects.html#nine" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Interested In More?</h2>
+					</header>
+					<p>I write about cool things (IMO) in tech and AI. I showcase passion projects I'm working on. I'll rant, even. Checkout my blog on https://blog.rohitdiwakar.com.</p>
+					<ul class="actions special">
+						<!-- <li><a href="#" target="_blank" class="button wide primary">Sign Up</a></li> -->
+						<li><a href="https://blog.rohitdiwakar.com" target="_blank" class="button wide primary">Go To Blog</a></li>
+					</ul>
+				</div>
+			</section>
+
+      <section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Certifications</h2>
+					</header>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/aws-cl-pr.png"  alt="" /></span>
+							<h3>AWS Cloud Practitioner</h3>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/aws-sol-as.png"  alt="" /></span>
+							<h3>AWS Solutions Architect Associate</h3>
+						</div>
+            <!-- <div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/aws-ai.png"  alt="" /></span>
+							<h3>AWS AI Practitioner</h3>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/aws-ml-e.png"  alt="" /></span>
+							<h3>AWS Machine Learning Engineer</h3>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/aws-ml-sp.png"  alt="" /></span>
+							<h3>AWS Machine Learning Specialty</h3>
+						</div> -->
+						<div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/ms-ad.png"  alt="" /></span>
+							<h3>Microsoft Azure Administrator</h3>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit small"><img src="images/certs/ms-dv.png"  alt="" /></span>
+							<h3>Microsoft DevOps Engineer</h3>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+     
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" target="_blank" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://www.linkedin.com/in/rohitdiwakar/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Blog</span></a></li>
+
+          <!-- <i class="fa-brands fa-dev"></i> -->
+				</ul>
+				<ul class="copyright">
+					<li>Copyright © 2025 Rohit Diwakar. All rights reserved.</li>
+          <!-- <li>&copy; www.rohitdiwakar.com</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+          
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+      <!-- Embed Chatbot -->
+      <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="f9O_A_WzvWSZz5CiiZWzi";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+      </script>
+
+	</body>
+</html>
