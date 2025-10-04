@@ -36,7 +36,7 @@
 
   <!-- chainlit interface - LOCAL -->
 	<!-- ... -->
-  <script src="https://dev-site-bot-1054323389168.asia-south1.run.app/copilot/index.js"></script>
+  <!-- <script src="https://dev-site-bot-1054323389168.asia-south1.run.app/copilot/index.js"></script>
   <script>
     window.addEventListener("chainlit-call-fn", (e) => {
       const { name, args, callback } = e.detail;
@@ -46,6 +46,20 @@
   <script>
     window.mountChainlitWidget({
       chainlitServer: "https://dev-site-bot-1054323389168.asia-south1.run.app/",
+    });
+  </script> -->
+
+  <!-- Chainlit copilot chat widget embed LOCAL -->
+  <script src="http://localhost:8000/copilot/index.js"></script>
+  <script>
+    window.addEventListener("chainlit-call-fn", (e) => {
+      const { name, args, callback } = e.detail;
+      callback("You sent: " + args.msg);
+    });
+  </script>
+  <script>
+    window.mountChainlitWidget({
+      chainlitServer: "http://localhost:8000",
     });
   </script>
 
