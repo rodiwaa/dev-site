@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Rohit Diwakar - AI Agentic Developer with 15+ Years in Cloud Engineering</title>
+		<title>Rohit Diwakar - Agentic AI Developer with 15+ Years in Cloud Engineering</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/nav-bar.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -22,32 +23,6 @@
 
       gtag('config', 'G-HF3PNR13YZ');
     </script>
-
-  <!-- n8n chat embed -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-  <script type="module">
-    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-    createChat({
-      webhookUrl: 'http://localhost:5678/webhook/5f1f7650-9bcd-43e0-acbd-6ba044342a2e/chat',
-      allowFileUpload: true
-    });
-  </script> -->
-
-  <!-- chainlit interface - LOCAL -->
-	<!-- ... -->
-  <!-- <script src="https://dev-site-bot-1054323389168.asia-south1.run.app/copilot/index.js"></script>
-  <script>
-    window.addEventListener("chainlit-call-fn", (e) => {
-      const { name, args, callback } = e.detail;
-      callback("You sent: " + args.msg);
-    });
-  </script>
-  <script>
-    window.mountChainlitWidget({
-      chainlitServer: "https://dev-site-bot-1054323389168.asia-south1.run.app/",
-    });
-  </script> -->
 
   <!-- Chainlit copilot chat widget embed LOCAL -->
   <script src="http://localhost:8000/copilot/index.js"></script>
@@ -63,28 +38,7 @@
     });
   </script>
 
-  <!-- Chainlit Copilot Integration GCP - CR -->
-  <!-- <script src="https://dev-site-bot-1054323389168.asia-south1.run.app/copilot/index.js"></script>
-    
   <script>
-	  window.addEventListener("chainlit-call-fn", (e) => {
-		  const { name, args, callback } = e.detail;
-		  // Handle function calls from your Chainlit app
-		  callback("You sent: " + args.msg);
-	  });
-  </script>
-   -->
-  <script>
-	//   window.mountChainlitWidget({
-	// 	  chainlitServer: "http://localhost:8000",
-	// 	  theme: "light", // or "dark"
-	// 	  expanded: false, // Start collapsed
-	// 	  button: {
-	// 		  // Customize the chat button appearance
-	// 		  imageUrl: "your-custom-icon.png",
-	// 		  className: "custom-chat-button"
-	// 	  }
-	//   });
 
 	  setTimeout(() => {
             if (window.mountChainlitWidget) {
@@ -99,6 +53,18 @@
   </script>
 
 	<body class="is-preload">
+    <!-- Navigation -->
+     <nav id="navbar" class="site-float-nav" role="navigation" aria-label="Primary">
+      <div class="site-float-nav__inner">
+        <a href="/index.html" class="site-float-nav__brand" aria-label="Home">Home</a>
+        <ul class="site-float-nav__links">
+          <li><a href="/projects.html"></i><span>Projects</span></a></li>
+          <li><a href="/blog.html"></i><span>Blog</span></a></li>
+          <li><a href="/ai.html"></i><span>AI Newsletters</span></a></li>
+          <li><a href="/news.html"></i><span>News</span></a></li>
+        </ul>
+      </div>
+    </nav>
 
 		<!-- Header -->
 			<section id="header">
@@ -109,11 +75,11 @@
           <!-- <p>Software Engineer w 15 years of experience. I make AI solutions to automate workflows.</p> -->
           <!-- <p class="icon solid major fa-wrench"></p> -->
            <p>Agentic AI Developer Consultant | Cloud Architect | 15+ Years in Scalable Solutions</p>
-           <p>I’m passionate about building autonomous, intelligent systems that solve real-world problems. </p>
-           <p>LangGraph, Langchain, OpenAI SDK <br /> 
-            Multi Agent Orchestration Systems (Make, n8n, Relevance AI, CrewAI) <br />
-            RAGs, CAGs Architectures Evaluation (Ragas, Langsmith Datasets) <br />
-            Ollama, Hugging Face, Together AI, AWS Bedrock <br />
+           <p>I automate business workflows and build AI systems that solve real-world problems. </p>
+           <p>LangGraph, Langchain, LangSmith <br /> 
+            n8n, Make, Relevance AI <br />
+            Agentic AI Systems, RAG, Agentic RAGs<br />
+            Evaluations using Ragas, Metric/ Score calculations.<br />
             Stable Diffusion (ComfyUI, A1111) <br />
            </p>
            <p>
@@ -136,7 +102,7 @@
            </p>
 
            <ul class="actions special">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
+						<!-- <li><a href="#one" class="button scrolly">Discover</a></li> -->
 					</ul>
 				</div>
 			</section>
@@ -158,12 +124,12 @@
 							</header>
 
               <!-- <b>AI Tech Stack</b><hr /> -->
-              <p>Langchain, PydanticAI, LangGraph <br /> 
-                RAGs, CAGs w Evaluation (Ragas) <br />
-                Ollama, Hugging Face, Together AI, AWS Bedrock <br />
-                Stable Diffusion (ComfyUI, A1111) <br />
-                Multi Agent Orchestration Systems (Make, n8n, Relevance AI, CrewAI) <br />
-              </p>
+              <p>LangGraph, Langchain, LangSmith <br /> 
+            n8n, Make, Relevance AI <br />
+            Agentic AI Systems, RAG, Agentic RAGs<br />
+            Evaluations using Ragas, Metric/ Score calculations.<br />
+            Stable Diffusion (ComfyUI, A1111) <br />
+           </p>
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
 							<span class="image fit"><img src="images/me.jpg" alt="" /></span>
@@ -205,7 +171,6 @@
 					</header>
           <!-- <p>(I'm putting together <b>http://projects.rohitdiwakar.com</b> and <b>https://demos.rohitdiwakar.com</b> to show off my AI passion projects. Coming soon!)</p> -->
           <p><li><a href="./projects.html" target="_blank" class="button wide primary">See All Projects</a></li></p>
-          <p>I'm putting together more details of my projects on my blog at <a href="https://rodiwa.substack.com/" target="_blank" class="icon brands alt fa-wordpress"> https://rodiwa.substack.com/<span class="label"></span></a></p>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/blog.jpg" height="220" alt="" /></span>
@@ -420,8 +385,7 @@
 					<li><a href="https://github.com/rodiwaa" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					<li><a href="https://www.linkedin.com/in/rohitdiwakar/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://rodiwa.substack.com/" target="_blank" class="icon brands alt fa-solid fa-wordpress"><span class="label">Blog</span></a></li>
-          <!-- <i class="fa-brands fa-dev"></i> -->
-				</ul>
+          <!-- 			</ul>
 				<ul class="copyright">
 					<li>Copyright © 2025 Rohit Diwakar. All rights reserved.</li>
           <!-- <li>&copy; www.rohitdiwakar.com</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
@@ -436,6 +400,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="assets/js/navbar.js"></script>
+      <script>
+        window.onscroll = function() {
+          scrollFunction();
+        };
+      </script>
 
       <!-- Embed Chatbot -->
       <script>

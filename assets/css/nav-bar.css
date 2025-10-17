@@ -1,0 +1,86 @@
+/* Floating top navigation */
+      .site-float-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        /*background: rgba(0, 0, 0, 0.55);            /* translucent to sit over header image */
+        /* -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px); */
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
+        color: inherit;                               /* follow site typography/colors */
+        opacity: 1; /* Initially fully visible */
+        transition: opacity 0.5s ease-out; /* Smooth transition over 0.5 seconds */
+      }
+
+
+        .site-float-nav.fade-out {
+          opacity: 0; /* Faded out state */
+        }
+
+      .site-float-nav__inner {
+        color: white;
+        max-width: 1200px;                            /* match your site container if different */
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .site-float-nav__brand {
+        /* font-weight: 700; */
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.95;
+      }
+
+      .site-float-nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-float-nav__links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: inherit;
+        padding: 0.4rem 0.65rem;
+        border-radius: 6px;
+        line-height: 1;
+        transition: background-color 160ms ease, opacity 160ms ease, transform 160ms ease;
+        opacity: 0.9;
+      }
+
+      .site-float-nav__links i {
+        font-size: 0.95em;                            /* Font Awesome (already included) */
+      }
+
+      /* Push page content below fixed nav (adjust if you tweak nav height) */
+      body {
+        /* padding-top: 56px; */
+      }
+
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        .site-float-nav__inner {
+          padding: 0.5rem 0.75rem;
+        }
+        .site-float-nav__links {
+          gap: 0.5rem;
+        }
+        .site-float-nav__links a {
+          padding: 0.4rem 0.5rem;
+        }
+        .site-float-nav__links span {
+          display: none;                              /* icon-only on smaller screens */
+        }
+      }
