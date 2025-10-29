@@ -64,9 +64,41 @@
         font-size: 0.95em;                            /* Font Awesome (already included) */
       }
 
+      a.nav-links-top {
+        border-bottom: none;
+      }
+
       /* Push page content below fixed nav (adjust if you tweak nav height) */
       body {
         /* padding-top: 56px; */
+      }
+
+      /* custom icon styles */
+      a.custom-icon.small {
+        fill: #fff;
+        border-bottom: none;
+      } 
+
+      a.custom-icon.medium {
+        fill: #fff;
+        border-bottom: none;
+      }
+
+      a.custom-icon.small img {
+        height: 23px;
+        fill: #fff;
+        border-bottom: none;
+      } 
+      
+      a.custom-icon.medium img {
+        height: 33px;
+        fill: #fff;
+        border-bottom: none;
+      }
+
+      img.custom-icon.large {
+        height: 74.67px;
+        width: 74.67px;
       }
 
       /* Responsive tweaks */
