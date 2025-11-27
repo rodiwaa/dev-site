@@ -2938,6 +2938,14 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
+      .main.style2 p span.small.tag {
+          font-size: 0.8em;
+        background-color: beige;
+        color: #000;
+        padding: 0.1em 0.5em;
+        border-radius: 0.5em;
+      }
+
 /* Header */
 
 	#header {
