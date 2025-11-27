@@ -2008,6 +2008,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+  li.no-style {
+		list-style: none !important;
+	}
+
 	header p {
 		color: #999;
 		margin: 0 0 1.5em 0;
