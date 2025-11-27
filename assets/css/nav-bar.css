@@ -113,6 +113,6 @@
           padding: 0.4rem 0.5rem;
         }
         .site-float-nav__links span {
-          display: none;                              /* icon-only on smaller screens */
+          /* display: none;                              icon-only on smaller screens */
         }
       }
