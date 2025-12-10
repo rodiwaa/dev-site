@@ -26,7 +26,7 @@
 
   <!-- Chainlit copilot chat widget embed LOCAL -->
   <!-- <script src="http://localhost:8000/copilot/index.js"></script> -->
-  <script src="http://54.159.19.168:8000/copilot/index.js"></script>
+  <script src="https://chat.rohitdiwakar.com/copilot/index.js"></script>
   <script>
     window.addEventListener("chainlit-call-fn", (e) => {
       const { name, args, callback } = e.detail;
@@ -35,7 +35,7 @@
   </script>
   <script>
     window.mountChainlitWidget({
-      chainlitServer: "http://54.159.19.168:8000",
+      chainlitServer: "https://chat.rohitdiwakar.com",
     });
   </script>
 
@@ -45,7 +45,7 @@
             if (window.mountChainlitWidget) {
                 console.log("Chainlit widget available");
                 window.mountChainlitWidget({
-                    chainlitServer: "http://54.159.19.168:8000/"
+                    chainlitServer: "https://chat.rohitdiwakar.com/"
                 });
             } else {
                 console.error("Chainlit widget not loaded");
