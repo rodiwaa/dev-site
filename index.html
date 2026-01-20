@@ -23,10 +23,25 @@
 
       gtag('config', 'G-HF3PNR13YZ');
     </script>
+     <script>
 
+	  setTimeout(() => {
+            if (window.mountChainlitWidget) {
+                console.log("Chainlit widget available");
+                window.mountChainlitWidget({
+                    chainlitServer: "https://chat.rohitdiwakar.com/"
+                });
+            } else {
+                console.error("Chainlit widget not loaded");
+            }
+        }, 1000);
+  </script>
+
+<!-- TODO: FIXME: update after cloud run deployment -->
+ <!-- TODO: redrect chat.rohitdiwakar.com to cloud run deployment -->
   <!-- Chainlit copilot chat widget embed LOCAL -->
   <!-- <script src="http://localhost:8000/copilot/index.js"></script> -->
-  <script src="https://chat.rohitdiwakar.com/copilot/index.js"></script>
+  <!-- <script src="https://chat.rohitdiwakar.com/copilot/index.js"></script>
   <script>
     window.addEventListener("chainlit-call-fn", (e) => {
       const { name, args, callback } = e.detail;
@@ -37,15 +52,32 @@
     window.mountChainlitWidget({
       chainlitServer: "https://chat.rohitdiwakar.com",
     });
-  </script>
+  </script> -->
 
+    <!-- Chainlit copilot chat widget embed LOCAL -->
+  <!-- <script src="http://localhost:8000/copilot/index.js"></script> -->
+  <script src="https://dev-site-rag-bot-610793341699.asia-south1.run.app/copilot/index.js"></script>
+  <script>
+    window.addEventListener("chainlit-call-fn", (e) => {
+      const { name, args, callback } = e.detail;
+      callback("You sent: " + args.msg);
+    });
+  </script>
+  <script>
+    window.mountChainlitWidget({
+      // without trailing \
+      chainlitServer: "https://dev-site-rag-bot-610793341699.asia-south1.run.app", 
+    });
+  </script>
+ <!-- https://dev-site-rag-bot-610793341699.asia-south1.run.app/ -->
+  <!-- https://dev-site-rag-bot-610793341699.asia-south1.run.app// -->
   <script>
 
 	  setTimeout(() => {
             if (window.mountChainlitWidget) {
                 console.log("Chainlit widget available");
                 window.mountChainlitWidget({
-                    chainlitServer: "https://chat.rohitdiwakar.com/"
+                    chainlitServer: "https://dev-site-rag-bot-610793341699.asia-south1.run.app"
                 });
             } else {
                 console.error("Chainlit widget not loaded");
