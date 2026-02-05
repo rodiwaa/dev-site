@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Rohit Diwakar - Agentic AI Developer with 15+ Years in Cloud Engineering</title>
+		<title>Rohit Diwakar - Multi Agentic AI Developer | LangGraph, Evals, ADK, A2A, MCP, N8N</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -107,13 +107,15 @@
 					<h1>Heyllo, I'm <strong>Rohit!</strong><br /></h1>
           <!-- <p>Software Engineer w 15 years of experience. I make AI solutions to automate workflows.</p> -->
           <!-- <p class="icon solid major fa-wrench"></p> -->
-           <p>Agentic AI Developer Consultant | Cloud Architect | 15+ Years in Scalable Solutions</p>
+           <p>Multi Agentic AI Developer | Cloud Architect | 15+ Years in Scalable Solutions</p>
            <p>I automate business workflows and build AI systems that solve real-world problems. </p>
-           <p>LangGraph, LangChain, LangSmith <br /> 
-            n8n, Make, Relevance AI <br />
-            Agentic AI Systems, RAG, Agentic RAGs<br />
-            Evaluations using Opik, Metric/ Score calculations.<br />
-            Stable Diffusion (ComfyUI, A1111) <br />
+           <p>
+            LangGraph, Evals, Google ADK, A2A, MCP, N8N<br />
+            <!-- LangGraph, LangChain, LangSmith <br />  -->
+            <!-- n8n, Make, Relevance AI <br /> -->
+            Agentic AI Systems Orchestration, Message Passing, Memory, Planning, RAG<br />
+            Evaluations (Opik, ADK-Evals), CICD Evaluation Pipelines with Metric/ Score calculations<br />
+            <!-- Stable Diffusion (ComfyUI, A1111) <br /> -->
            </p>
            <p>
           <!-- <li><a href="#" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
@@ -134,10 +136,10 @@
             <a href="https://www.instagram.com/_rodiwa/" target="_blank" class="icon brands alt fa-instagram"><span class="label"></span></a>
             &nbsp;
             
-
+<!-- <a href="https://dev-site-rag-bot-610793341699.asia-south1.run.app" target="_blank"><span class="icon solid major fa-comment"></span> Open chatbot in new window</a> -->
           </h1>
 
-          <!-- <p><small><span class="icon solid fa-comment"></span> &nbsp; To run AI chat in full window, open <a href="https://chat.rohitdiwakar.com" target="_blank">chat.rohitdiwakar.com</a></p> -->
+          <p><small><span class="icon solid fa-comment"></span> &nbsp; To run AI chat in full window, open <a href="https://dev-site-rag-bot-610793341699.asia-south1.run.app" target="_blank">chat.rohitdiwakar.com</a></p>
            </small>
            </p>
 
@@ -192,31 +194,32 @@
           <p><li class="no-style" style="list-style: none;"><a href="./projects.html" target="_blank" class="button wide primary">See All Projects</a></li></p>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/projects/comfy-ui.png" height="220" alt="" /></span>
-							<h3>Comfy UI Setup On AWS</h3>
-							<p>I setup a comfy UI rig on an EC2 instance to play around with image generation using open source Flux, SDXL models and LoRAs. While setting up manually was excruciating, it was a good learning curve.</p>
-               
-              <p>
-                <span class="tag small">Stable Diffusion</span>
-                <span class="tag small">ComfyUI</span>
-                <span class="tag small">AWS</span>
+							<span class="image fit"><img src="images/projects/civit-ai.png" height="220" alt="" /></span>
+							<h3>Planner & Researcher</h3>
+							<p>A multi-agentic system built using google-adk framework and MCP tools. It searches for new job openings, extracts information like tech-stack, contact info and company details. Agents communicate via state/ tool-contexts and the system implements callbacks, middleware for HITL,  for certain actions like save to DB or apply directly. It uses custom tools built on top of MCP to interact with Notion DB.</p>
+							<p>
+                <span class="tag small">Google-ADK</span>
+                <span class="tag small">State Sharing</span>
+                <span class="tag small">A2A, MCP</span>
+                <span class="tag small">Multi Agent</span>
 							</p>
               <ul class="actions special">
-								<li><a href="./projects.html#comfy" target="_blank" class="button primary">More</a></li>
+								<li><a href="./projects.html#civit" target="_blank" class="button primary">More</a></li>
 							</ul>
 						</div>
+
             <div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/projects/ava.png" height="220" alt="" /></span>
-							<h3>WhatsApp Companion Ava</h3>
-							<!-- <p>This multimodal project allows you to chat with a AI persona 'Ava'. Ava has a hypothetical day schedule which is injected via context engineering to chat accordingly.</p> -->
-							<p>Inspired by a YT tutorial, this multimodal project allows you to chat with a AI persona 'Ava'. Hypothetical day schedule is injected via context engineering to chat accordingly in different times of day.</p>
-              
-              <p>
-                <span class="tag small">Context Engineering</span>
-                <span class="tag small">LangGraph</span>
+							<span class="image fit"><img src="images/projects/tv.jpg" height="220" alt="" /></span>
+							<h3>Health Dashboard, Trends</h3>
+							<p>A multi agentic system built using adk, which  allows user to upload health report and analyse trends for markers like LDL, HDL ranges and ratios, over time. Upload is managed via adk-artifact manager. Data is passed between agents using contexts. Callbacks, Middlewares implement PII removal. Chainlit used for user interface. The system allows users to query their reports for more understanding.</p>
+							<p>
+                <span class="tag small">ADK-Callbacks PII Removal</span>
+                <span class="tag small">Multi Agent</span>
+                <span class="tag small">GCP Cloud Run</span>
+                <span class="tag small">ADK-Artifacts-Upload</span>
 							</p>
               <ul class="actions special">
-								<li><a href="./projects.html#ava" target="_blank" class="button primary">More</a></li>
+								<li><a href="./projects.html#pi" target="_blank" class="button primary">More</a></li>
 							</ul>
 						</div>
             <div class="col-4 col-12-medium">
@@ -251,18 +254,33 @@
 							</ul>
 						</div>
             <!-- new projects added above -->
+            
             <div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/projects/civit-ai.png" height="220" alt="" /></span>
-							<h3>LoRA Training</h3>
-							<p>Most multimodal GPTs were not able to generate the new Hyundai Tucson model with the new wing-like DRLs. I trained a LoRA model using Flux that generates accurate Hyundai Tucson renderings.</p>
-							<p>
-                <span class="tag small">LoRA</span>
-                <span class="tag small">Training</span>
-                <span class="tag small">Flux</span>
-                <span class="tag small">CivitAI</span>
+							<span class="image fit"><img src="images/projects/comfy-ui.png" height="220" alt="" /></span>
+							<h3>Comfy UI Setup On AWS</h3>
+							<p>I setup a comfy UI rig on an EC2 instance to play around with image generation using open source Flux, SDXL models and LoRAs. While setting up manually was excruciating, it was a good learning curve.</p>
+               
+              <p>
+                <span class="tag small">Stable Diffusion</span>
+                <span class="tag small">ComfyUI</span>
+                <span class="tag small">AWS</span>
 							</p>
               <ul class="actions special">
-								<li><a href="./projects.html#civit" target="_blank" class="button primary">More</a></li>
+								<li><a href="./projects.html#comfy" target="_blank" class="button primary">More</a></li>
+							</ul>
+						</div>
+            <div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/projects/ava.png" height="220" alt="" /></span>
+							<h3>WhatsApp Companion Ava</h3>
+							<!-- <p>This multimodal project allows you to chat with a AI persona 'Ava'. Ava has a hypothetical day schedule which is injected via context engineering to chat accordingly.</p> -->
+							<p>Inspired by a YT tutorial, this multimodal project allows you to chat with a AI persona 'Ava'. Hypothetical day schedule is injected via context engineering to chat accordingly in different times of day.</p>
+              
+              <p>
+                <span class="tag small">Context Engineering</span>
+                <span class="tag small">LangGraph</span>
+							</p>
+              <ul class="actions special">
+								<li><a href="./projects.html#ava" target="_blank" class="button primary">More</a></li>
 							</ul>
 						</div>
             <div class="col-4 col-12-medium">
