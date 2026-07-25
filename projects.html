@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Rohit Diwakar - View My Projects</title>
+		<title>Rohit Diwakar - Projects</title>
 		<meta charset="utf-8" />
     <meta name="description" content="Showcases project summary. Also mentions technology stack after project description.">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -45,12 +45,7 @@
 					<span class="icon solid major fa-code"></span>
 					<h1>Projects<br /></h1>
 					<p>
-            FULL DISCLOSURE: Passion projects help me learn new technology.</br>
-            I build MVPs for personal usecases and add features incrementally as per fitment. <br>
-            Only a handful are deployed, with full production ready features, due to cost constraints and priority. <br>
-            <p><i>
-              For example, evaluations are not in all projects. Middlewares are added only <br> 
-              when I needed HITL, or redact PII from RAG ingested documents, etc.
+            I build to automate my workflows, and learn something new in tech. Recently I'm building production ready AI apps.
             </i></p>
           </p>
           <!-- <ul class="actions special">
@@ -65,9 +60,10 @@
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>Planner & Researcher</h2>
-							</header>              
-							<p>A multi-agentic system built using google-adk framework and MCP tools. It searches for new job openings, extracts information like tech-stack, contact info and company details. Agents communicate via state/ tool-contexts and the system implements callbacks, middleware for HITL,  for certain actions like save to DB or apply directly. It uses custom tools built on top of MCP to interact with Notion DB.</p>
+								<h2>WhatsApp Ava Bot</h2>
+							</header>
+              <!-- <p>Inspired by JESUS PROJECT, I built this to get exposure to production-ready, real-world apps and multi modal using TTS, STT, TTI models.</p> -->
+              <p>Built an AI character, Ava, with time-aware behavior and image generation based on imagined daily events. Inspired by a YouTube demo, with speech powered by Eleven Labs.</p>
               <p>
                 <span class="tag small">Google-ADK</span>
                 <span class="tag small">A2A</span>
@@ -76,11 +72,13 @@
                 <span class="tag small">GCP Cloud Run</span>
                 <!-- <span class="tag small">Session, Memory</span> -->
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-              
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
+
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/ai-chat.png" alt="" /></span>
+							<span class="image fit"><img src="images/projects/ava.png" alt="" /></span>
 						</div>
             
 					</div>
@@ -94,8 +92,9 @@
 						<div class="col-6 col-12-medium">
 							<header class="major">
 								<h2>Health Dashboard & Trends</h2>
-							</header>              
-							<p>is a multi agentic system built using adk, which  allows user to upload health report and analyse trends for markers like LDL, HDL ranges and ratios, over time. Upload is managed via adk-artifact manager. Data is passed between agents using contexts. Callbacks, Middlewares implement PII removal. Chainlit used for user interface. The system allows users to query their reports for more understanding.</p>
+							</header>
+              <p>Created a LangGraph multi-agent app that processes health reports, cleans PII, extracts trends, and explains results via natural queries. Chainlit provides a simple interactive UI.</p>
+
               <p>
                 <span class="tag small">Multi Agent</span>
                 <span class="tag small">Docker</span>
@@ -104,11 +103,13 @@
                 <span class="tag small">ADK-Web</span>
                 <span class="tag small">ADK-Artifacts-Upload</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-              
+               <a href="https://github.com/rodiwaa/query-health-report" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
+
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/kpi-dashboard.png" alt="" /></span>
+							<span class="image fit"><img src="images/projects/health trends/health-trends.png" alt="" /></span>
 						</div>
             
 					</div>
@@ -123,7 +124,8 @@
 							<header class="major">
 								<h2>Email Manager Assistant</h2>
 							</header>              
-							<p>uses n8n workflows deployed on GCP Cloud Run to perform daily cleanup tasks such as marking spams, archiving old emails and summarising important emails to Slack/ Telegram for me.</p>
+							<!-- <p>uses n8n workflows deployed on GCP Cloud Run to perform daily cleanup tasks such as marking spams, archiving old emails and summarising important emails to Slack/ Telegram for me.</p> -->
+              <p>Deployed N8N workflows on Google Cloud Run to automate email triage—spam cleanup, priority tagging, and Slack summaries. Used Docker and Secret Manager for secure, scalable operations.</p>
               <p>
                 <span class="tag small">N8N</span>
                 <span class="tag small">GCP Cloud Run</span>
@@ -131,7 +133,9 @@
                 <span class="tag small">Gmail</span>
                 <span class="tag small">Pinecone</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -150,17 +154,18 @@
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>Website ChatBot Assistant5555</h2>
-							</header>              
-							<p>Website chatbot to answer general queries using PDF as source. 2 step RAG. Deployed on Docker, AWS EC2. Live on portfolio website via Chainlit. Incremental features added - Evaluations, Prompt Caching, Cohere Reranking for RAG documents.</p>
+								<h2>SLMs for Edge Devices</h2>
+							</header>
+							<p>Researching and building SLMs for edge devices to create autonomous personal assistants with capabilities like phone receiver, offline translator uing SLM techniques like quant, FLOE, etc.</p>
               <p>
                 <span class="tag small">RAG</span>
-                <span class="tag small">Docker</span>
-                <span class="tag small">Evaluations & Scoring</span>
-                <span class="tag small">Opik</span>
-                <span class="tag small">Pinecone</span>
+                <span class="tag small">Llama.cpp</span>
+                <span class="tag small">FLOE</span>
+                <span class="tag small">FAISS</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/slm-the-thes-mlx-lm" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -177,9 +182,9 @@
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>Website ChatBot Assistant</h2>
-							</header>              
-							<p>Website chatbot to answer general queries using PDF as source. 2 step RAG. Deployed on Docker, AWS EC2. Live on portfolio website via Chainlit. Incremental features added - Evaluations, Prompt Caching, Cohere Reranking for RAG documents.</p>
+								<h2>AI Bootstrap Project</h2>
+							</header>
+							<p>Series of minimal features critical to get started with AI projects, without having to reinvent the initial setup wheel all over again.</p>
               <p>
                 <span class="tag small">RAG</span>
                 <span class="tag small">Docker</span>
@@ -187,7 +192,9 @@
                 <span class="tag small">Opik</span>
                 <span class="tag small">Pinecone</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/bootstrap-project" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -199,7 +206,7 @@
 				</div>
 			</section>
 
-      <section id="ava" class="main style2">
+      <!-- <section id="ava" class="main style2">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
@@ -215,7 +222,9 @@
                 <span class="tag small">WhatsApp</span>
                 <span class="tag small">Qdrant</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -225,9 +234,9 @@
 					</div>
           <!-- <hr /> -->
 				</div>
-			</section>
+			</section> -->
 
-      <section id="comfy" class="main style1">
+      <section id="comfy" class="main style2">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
@@ -241,7 +250,9 @@
                 <span class="tag small">LoRA</span>
                 <span class="tag small">AWS</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
 
                <a href="https://rodiwa.substack.com/p/self-hosting-comfy-ui" target="_blank" class="button secondary">Blog</a>
               
@@ -255,7 +266,7 @@
 				</div>
 			</section>
 
-      <section id="civit" class="main style2">
+      <section id="civit" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
@@ -269,9 +280,8 @@
                 <span class="tag small">Flux</span>
                 <span class="tag small">Replicate</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-               <a href="https://rodiwa.substack.com/p/training-lora-with-your-own-images" target="_blank" class="button secondary">Blog</a>
-              
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://rodiwa.substack.com/p/training-lora-with-your-own-images" target="_blank" class="button secondary">Blog</a>              
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
 							<span class="image fit"><img src="images/projects/civit-ai.png" alt="" /></span>
@@ -282,41 +292,13 @@
 				</div>
 			</section>
 
-      <section id="kpi" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Health Metrics KPI Dashboard</h2>
-							</header>
-              <p>
-                Ingest health params from Google Drive via dedicated ingestion pipeline. Track trends of KPI markers using middlewares. Visualise KPI trends using dashboards.
-              </p>
-              <p>
-                <span class="tag small">LangChain</span>
-                <span class="tag small">LangGraph</span>
-                <span class="tag small">Middlewares</span>
-                <span class="tag small">Ingestion-Pipelines</span>
-                <span class="tag small">AWS-QuickSight</span>
-                <span class="tag small">D3JS</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/kpi-dashboard.png" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
 
-      <section id="ai-trends" class="main style2">
+      <!-- <section id="ai-trends" class="main style2">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<header class="major">
-								<h2>AI Engineer Interview Keywords Trend</h2>
+								<h2>~~~</h2>
 							</header>
               <p>
                 Agentic AI app to search AI job openings, extract keywords and map to weekly trends. Uses HITL LangChain middlewares to confirm before saving data to Notion database.
@@ -329,45 +311,22 @@
                 <span class="tag small">Trends</span>
                 <span class="tag small">D3JS</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
 							<span class="image fit"><img src="images/projects/stocks.jpg" alt="" /></span>
 						</div>
             
 					</div>
-          <!-- <hr /> -->
+          <!-- <hr /> --
 				</div>
-			</section>
+			</section> -->
 
       <!-- two -->
       
-      <section id="cms" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Headless CMS Site</h2>
-							</header>
-              
-							<p>Simple portfolio website. Headless CMS so it is easily configurable with new data. There are subdomains that populate subdomains such as daily news, etc.</p>
-              <p>
-                <span class="tag small">Headless CMS</span>
-                <span class="tag small">Stablo</span>
-                <span class="tag small">Vercel</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-              
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/stablo.png" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
-
+      
       <!-- six -->
 			<section id="pi" class="main style2">
 				<div class="container">
@@ -376,7 +335,7 @@
 							<header class="major">
 								<h2>Media Server On Raspberry Pi</h2>
 							</header>
-							<p>Raspberry Pi w USB setup to host NFS server on home LAN. Allows downloaded media (TV shows, Movies) to be copied to attached USB storage via phone, and can eventually be played on smart TV.</p>
+							<p>Raspberry Pi w USB setup to host NFS server on home LAN. Allows downloaded media (TV shows, Movies) to be copied to attached USB storage via phone, and can eventually be played on smart TV using NFS server hosted on VLC.</p>
               <p>
                 <span class="tag small">Raspberyy Pi</span>
                 <span class="tag small">NFS Server</span>
@@ -384,7 +343,9 @@
                 <span class="tag small">Termux</span>
                 <span class="tag small">VLC</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
                 &nbsp;&nbsp;
                <a href="https://rodiwa.substack.com/p/how-i-watch-movies-from-any-device" target="_blank" class="button secondary">Blog</a>
 
@@ -402,120 +363,13 @@
 
 
 
-			<section id="linkedin" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Increase LinkedIn Engagement</h2>
-							</header>
-							<p>Create a digital me to manage my LinkedIn. Use my blogs and emails as dataset for SLM training using Hugging Face Transformers + TRL and PyTorch. The project increases LinkedIn engagement significantly by posting content, replying to comments and liking and sharing relevant posts. It also aims to follow topics, pages and people who have similar interests.</p>
-              <p>
-                <span class="tag small">HuggingFace</span>
-                <span class="tag small">Transformers</span>
-                <span class="tag small">SLM</span>
-                <span class="tag small">TRL</span>
-                <span class="tag small">PyTorch</span>
-                <span class="tag small">LangChain</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-              
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/linkedin.jpg" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
+			
 
-      <!-- three -->
-			<section id="algo" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Algo Trading & Research Assistant</h2>
-							</header>
-							<p>Inspired from YTs "Micheal Automates" videos. Use various LLMs to generate PineScript on TradingView to generate indiciators and signals. Then compares accuracy with historical data via backtesting. Eventually pivoted to simple AI agentic app for daily news to provide insights into swing trading equities.</p>
-              <p>
-                <span class="tag small">AI</span>
-                <span class="tag small">DeepSeek</span>
-                <span class="tag small">Gemini</span>
-                <span class="tag small">TradinView</span>
-                <span class="tag small">YouTube</span>
-                <span class="tag small">PineScript</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/stocks.jpg" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
 
-      <!-- four -->
-			<section id="blog" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Automated Blog Writer</h2>
-							</header>              
-							<p>Highly SEO optimised blogs generated by AI agents using open source LLMs. Predefined blog structure was used to generate blogs. The challenge was that the blog tone was <a href="https://dev.to/rodiwa/understanding-vertical-agents-3bik" target="_blank">mundane</a> and <a href="https://dev.to/rodiwa/understanding-llm-concepts-orchestrators-evaluators-validators-and-guardrails-5b6n" target="_blank">robotic</a>. Considering SFT training SLM with actual Substack blogs, sent emails to create personality, human tone and vocabulary. Blog title is given via Slack/ Telegrat botfather, content would be saved to headless CMS Sanity that updates blog site automatically. Turns out nothing beats writing on your own on <a href="https://rodiwa.substack.com/" target="_blank">Substack</a>.</p>
-              <p>
-                <span class="tag small">AI</span>
-                <span class="tag small">Multi Agent</span>
-                <span class="tag small">RelevanceAI</span>
-                <span class="tag small">Make.com</span>
-                <span class="tag small">Slack</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-              
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/blog.jpg" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
 
       <!-- five -->
 			
 
-      <!-- seven -->
-			<section id="phone" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Phone Call Assistant</h2>
-							</header>
-							<p>Android application to intercept phone calls from unknown numbers without ringing. Automated voive will receive call to determine if spam call via locally installed trained LLM. Conversation is transcribed on screen, in case intervention is needed. If LLM determines genuine call, will proceed to ring.</p>
-              <p>
-                <span class="tag small">SLM</span>
-                <span class="tag small">Android Studio</span>
-                <span class="tag small">Kotlin</span>
-                <span class="tag small">Android-NDK</span>
-                <span class="tag small">Android-ADB</span>
-                <span class="tag small">Llama.cpp</span>
-              </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/projects/spam.jpg" alt="" /></span>
-						</div>
-            
-					</div>
-          <!-- <hr /> -->
-				</div>
-			</section>
 
       <!-- eight -->
 			<section id="raf" class="main style1">
@@ -525,7 +379,7 @@
 							<header class="major">
                 <h2>Resiliency Automation Framework</h2>
 							</header>
-							<p>Automated load injection, chaos injection, monitoring, reporting to give back application team members 5-6 hours everyday during game-day activities for Chase Travel.</p>
+							<p>End-to-end game-day automation for Chase Travel — orchestrating load injection, chaos injection, monitoring, and reporting to reclaim 5–6 hours per engineer per day. An AI layer was added to synthesize experiment results into structured summaries for compliance documentation.</p>
               <p>
                 <span class="tag small">AWS</span>
                 <span class="tag small">Step Functions</span>
@@ -536,7 +390,9 @@
                 <span class="tag small">Office</span>
                 <span class="tag small">DB-Streams</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
@@ -567,7 +423,9 @@ Reduced operational costs from $80,000 to less than $3000 every weekend. Created
                 <span class="tag small">Office</span>
                 <span class="tag small">Infrastructure-Provisioning</span>
               </p>
-               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Read More</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">GitHub</a>
+               <a href="https://github.com/rodiwaa/projects_list" target="_blank" class="button primary">Blog</a>
+
               
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
