@@ -10,3 +10,5 @@ cfn-invalidate:
 fresh-deploy:
 	make deploy-aws cfn-invalidate
 	
+github-deploy:
+	git push origin main
