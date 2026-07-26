@@ -235,7 +235,7 @@
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/ccaas.jpg" height="220" alt="" /></span>
 							<h3>CCaas (AWS Connect)</h3>
-							<p>Build CCaaS system with Lex bots, AI agents, for self-service, human tone and enhanced CX.</p>
+							<p>Build CCaaS system with Lex bots, AI agents, for self-service, human tone, CX.</p>
 							<p>
                 <span class="tag small">AWS Connect Customer</span><br>
                 <span class="tag small">AI Agents</span>
@@ -264,12 +264,13 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/health trends/health-trends.png" height="220" alt="" /></span>
 							<h3>Health Dashboard &amp; Trends</h3>
-							<p>Multi-agent system to upload health reports, generate KPI trend graphs, and query for insights. Optimized context window via adk-artifact-manager to reduce token overhead. Evaluated cost reductions using Ollama, DeepSeek, LLaMA. Evaluated performance using prompt versioning and Opik evaluations.</p>
-							<p>
+							<!-- <p>Multi-agent system to upload health reports, generate KPI trend graphs, and query for insights. Optimized context window via adk-artifact-manager to reduce token overhead. Evaluated cost reductions using Ollama, DeepSeek, LLaMA. Evaluated performance using prompt versioning and Opik evaluations.</p> -->
+							<p>Multi-agent system to analyse health records using trends for analysis.</p>
+              <p>
                 <span class="tag small">Google-ADK</span>
                 <span class="tag small">ADK-Artifacts</span>
-                <span class="tag small">Opik Evals</span>
-                <span class="tag small">Ollama</span>
+                <!-- <span class="tag small">Opik Evals</span> -->
+                <!-- <span class="tag small">Ollama</span> -->
                 <span class="tag small">Multi Agent</span>
 							</p>
               <ul class="actions special">
@@ -279,13 +280,15 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/ai-chat.png" height="220" alt="" /></span>
 							<h3>Website RAG Bot</h3>
-							<p>RAG system for portfolio site with heuristic and semantic feedback, golden datasets, and eval-based development. Ingestion and query pipelines, P50/P90 latency tracking, LLM-as-judge feedback metrics, central prompt versioning, and evals gated on every commit via pre-commit hooks and CICD.</p>
-							<p>
+							<!-- <p>RAG system for portfolio site with heuristic and semantic feedback, golden datasets, and eval-based development. Ingestion and query pipelines, P50/P90 latency tracking, LLM-as-judge feedback metrics, central prompt versioning, and evals gated on every commit via pre-commit hooks and CICD.</p> -->
+							<p>RAG system to answer website queries using integrated webchat.</p>
+              <p>
                 <span class="tag small">RAG</span>
-                <span class="tag small">Opik Evals</span>
-                <span class="tag small">CICD</span>
-                <span class="tag small">LLM-as-Judge</span>
-                <span class="tag small">Pinecone</span>
+                <span class="tag small">Chainlit</span>
+                <!-- <span class="tag small">Opik Evals</span> -->
+                <!-- <span class="tag small">CICD</span> -->
+                <!-- <span class="tag small">LLM-as-Judge</span> -->
+                <span class="tag small">LangGragh</span>
 							</p>
               <ul class="actions special">
 								<li><a href="./projects.html#rag" target="_blank" class="button primary">More</a></li>
@@ -295,13 +298,14 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/chaos.jpg" height="220" alt="" /></span>
 							<h3>Resiliency Automation Framework</h3>
-							<p>End-to-end game-day automation for Chase Travel — orchestrating load injection, chaos injection, monitoring, and reporting to reclaim 5–6 hours per engineer per day. An AI layer was added to synthesize experiment results into structured summaries for compliance documentation.</p>
-							<p>
-                <span class="tag small">AWS</span>
+							<!-- <p>End-to-end game-day automation for Chase Travel — orchestrating load injection, chaos injection, monitoring, and reporting to reclaim 5–6 hours per engineer per day. An AI layer was added to synthesize experiment results into structured summaries for compliance documentation.</p> -->
+							<p>Automated gameday (chaos engineering) activities - Load, Chaos injection, Monitoring, Reporting</p>
+              <p>
+                <span class="tag small">Chaos Engineering</span>
                 <span class="tag small">DB-Streams</span>
-                <span class="tag small">Lambda</span>
+                <!-- <span class="tag small">Lambda</span> -->
                 <span class="tag small">FIS</span>
-                <span class="tag small">Gremlin</span>
+                <!-- <span class="tag small">Gremlin</span> -->
 
 							</p>
               <ul class="actions special">
@@ -311,11 +315,12 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/site-chatbot-n8n.png" height="220" alt="" /></span>
 							<h3>N8N Email Assistant</h3>
-							<p>Automated email triage workflows using N8N deployed on GCP Cloud Run. Daily spam cleanup, inbox prioritization, and unread mail summary sent to Slack via cron jobs. Deployed with N8N Community Docker using Secret Manager for API keys.</p>
-							<p>
+							<!-- <p>Automated email triage workflows using N8N deployed on GCP Cloud Run. Daily spam cleanup, inbox prioritization, and unread mail summary sent to Slack via cron jobs. Deployed with N8N Community Docker using Secret Manager for API keys.</p> -->
+							<p>Automated email triage system to manage personal emails.</p>
+              <p>
                 <span class="tag small">N8N</span>
                 <span class="tag small">GCP Cloud Run</span>
-                <span class="tag small">Docker</span>
+                <!-- <span class="tag small">Docker</span> -->
                 <span class="tag small">Slack</span>
 							</p>
               <ul class="actions special">
@@ -325,13 +330,14 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/comfy-ui.png" height="220" alt="" /></span>
 							<h3>SLMs for Edge Devices <small>(In Progress)</small></h3>
-							<p>Building a voice-enabled autonomous phone assistant using PyTorch-trained SLMs for Android. Will train on recorded calls to classify spam/ham and answer autonomously. Exploring Android NDK + llama.cpp integration and STS models to reduce STT/TTS latency.</p>
+							<!-- <p>Building a voice-enabled autonomous phone assistant using PyTorch-trained SLMs for Android. Will train on recorded calls to classify spam/ham and answer autonomously. Exploring Android NDK + llama.cpp integration and STS models to reduce STT/TTS latency.</p> -->
+							<p>Building a voice-enabled autonomous phone assistant using PyTorch-trained SLMs for Android.</p>
 							<p>
-                <span class="tag small">PyTorch</span>
+                <!-- <span class="tag small">PyTorch</span> -->
                 <span class="tag small">SLM</span>
                 <span class="tag small">Android NDK</span>
                 <span class="tag small">llama.cpp</span>
-                <span class="tag small">In Progress</span>
+                <!-- <span class="tag small">In Progress</span> -->
 							</p>
               <ul class="actions special">
 								<li><a href="./projects.html#vox" target="_blank" class="button primary">More</a></li>
@@ -342,7 +348,8 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/comfy-ui.png" height="220" alt="" /></span>
 							<h3>Comfy UI Setup On AWS</h3>
-							<p>I setup a comfy UI rig on an EC2 instance to play around with image generation using open source Flux, SDXL models and LoRAs. While setting up manually was excruciating, it was a good learning curve.</p>
+							<!-- <p>I setup a comfy UI rig on an EC2 instance to play around with image generation using open source Flux, SDXL models and LoRAs. While setting up manually was excruciating, it was a good learning curve.</p> -->
+							<p>Reusable Comfy UI rig to play around with image generation using open source Flux, SDXL models and LoRAs.</p>
                
               <p>
                 <span class="tag small">Stable Diffusion</span>
@@ -356,13 +363,14 @@
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/ava.png" height="220" alt="" /></span>
 							<h3>WhatsApp Companion Ava</h3>
-							<p>Production-ready multimodal app (TTS, STS, TTI) with LangGraph backend, WebRTC and FastAPI endpoints. Real-time WebRTC audio streaming with open-source STT/TTS/TTI models. Context-aware memory using summarization and user-preference extraction stored in Qdrant to reduce drift.</p>
+							<!-- <p>Production-ready multimodal app (TTS, STS, TTI) with LangGraph backend, WebRTC and FastAPI endpoints. Real-time WebRTC audio streaming with open-source STT/TTS/TTI models. Context-aware memory using summarization and user-preference extraction stored in Qdrant to reduce drift.</p> -->
+							<p>Production-ready multimodal app (TTS, STS, TTI) with LangGraph backend, WebRTC and FastAPI endpoints. </p>
 
               <p>
-                <span class="tag small">LangGraph</span>
+                <!-- <span class="tag small">LangGraph</span> -->
                 <span class="tag small">WebRTC</span>
                 <span class="tag small">FastAPI</span>
-                <span class="tag small">Qdrant</span>
+                <!-- <span class="tag small">Qdrant</span> -->
                 <span class="tag small">TTS/STS/TTI</span>
 							</p>
               <ul class="actions special">
@@ -371,12 +379,13 @@
 						</div>
             <div class="col-4 col-12-medium">
 							<span class="image fit"><img src="images/projects/tv.jpg" height="220" alt="" /></span>
-							<h3>Media Server On Raspberry Pi</h3>
-							<p>Raspberry Pi w USB setup to host NFS server on home LAN. Allows downloaded media (TV shows, Movies) to be copied to attached USB storage via phone, and can eventually be played on smart TV.</p>
+							<h3>Personal Media Server</h3>
+							<!-- <p>Raspberry Pi w USB setup to host NFS server on home LAN. Allows downloaded media (TV shows, Movies) to be copied to attached USB storage via phone, and can eventually be played on smart TV.</p> -->
+							<p>Raspberry Pi w USB setup to host NFS server on home LAN.</p>
 							<p>
-                <span class="tag small">Raspberyy Pi</span>
+                <span class="tag small">Raspberry Pi</span>
                 <span class="tag small">NFS Server</span>
-                <span class="tag small">SSH</span>
+                <!-- <span class="tag small">SSH</span> -->
                 <span class="tag small">Termux</span>
 							</p>
               <ul class="actions special">
@@ -448,6 +457,14 @@
 						<h2>Certifications</h2>
 					</header>
 					<div class="row gtr-150">
+            <div class="col-4 col-12-medium">
+              <span class="image fit small"><img src="images/badges/connect-comm-spl.png"  alt="" /></span>
+							<h3>AWS Connect Communication Specialist</h3>
+						</div>
+            <div class="col-4 col-12-medium">
+              <span class="image fit small"><img src="images/badges/connect-ai-fund.png"  alt="" /></span>
+							<h3>AWS Connect AI Fundamentals</h3>
+						</div>
             <div class="col-4 col-12-medium">
               <span class="image fit small"><img src="images/certs/aws-sol-as.png"  alt="" /></span>
 							<h3>AWS Solutions Architect Associate</h3>
